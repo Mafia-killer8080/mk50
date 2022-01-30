@@ -6,11 +6,23 @@ if __name__ == "__main__":
 			exit(" [!] Succesfull Deleted")
 		else:
 			print(" [?] Wellcome : ")
-			exit(" [!] Run : python jssl.py remove")
+			exit(" [!] Run : python file.py remove")
 	try:
-		__import__("mk50").__main__Main()
+		__import__("mk50").__main_Main()
 	except Exception as e:
 		exit(str(e))
+
+
+	
+	
+
+		
+	
+		
+	
+
+
+
 
 
 
