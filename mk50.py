@@ -1,14 +1,26 @@
-import os, platform
-try:
-   import requests
-except:
-   os.system('pip2 install requests')
+import os, sys
+if __name__ == "__main__":
+	if len(sys.argv) == 2:
+		if sys.argv[1] == "remove":
+			os.system("rm -f .__apikey__.txt")
+			exit(" [!] Succesfull Deleted")
+		else:
+			print(" [?] Wellcome : ")
+			exit(" [!] Run : python jssl.py remove")
+	try:
+		__import__("mk50").__main__Main()
+	except Exception as e:
+		exit(str(e))
 
-import requests
-bit = platform.architecture()[0]
-if bit == '64bit':
-    from mk50 import main
-    main()
-elif bit == '32bit':
-    from mk50 import main
-    main()
+
+
+
+
+
+
+
+
+
+
+
+
