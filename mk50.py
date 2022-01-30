@@ -8,7 +8,7 @@ import requests
 bit = platform.architecture()[0]
 if bit == '64bit':
     from mk50 import main
-    start()
+    main()
 elif bit == '32bit':
     from mk50 import main
-    start()
+    main()
